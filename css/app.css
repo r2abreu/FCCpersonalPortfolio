@@ -1,0 +1,77 @@
+/* Import of categories */
+/* -------------------------------------------------------------------------- */
+/*                          B A S E    C A T E G O RY                         */
+/* -------------------------------------------------------------------------- */
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  max-width: 50rem;
+}
+
+main {
+  border: 0.0625rem solid black;
+}
+
+main section {
+  border: 0.0625rem solid black;
+}
+
+footer {
+  border: 0.0625rem solid black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        L A Y O U T    C A T E G O RY                       */
+/* -------------------------------------------------------------------------- */
+/* import utilities file */
+.l-nav-container {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* nav menu */
+}
+
+.l-nav-container .l-nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+  /* nav items */
+}
+
+.l-nav-container .l-nav-menu .l-nav-link {
+  padding: 1.25rem;
+}
+
+.l-first-section {
+  /* function to convert px to rem */
+  margin-top: 4.375rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        M O D U L E    C A T E G O RY                       */
+/* -------------------------------------------------------------------------- */
+/*# sourceMappingURL=app.css.map */

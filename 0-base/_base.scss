@@ -1,0 +1,33 @@
+/* -------------------------------------------------------------------------- */
+/*                          B A S E    C A T E G O RY                         */
+/* -------------------------------------------------------------------------- */
+
+@import '../4-utilities/utilities';
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 1rem;
+}
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	background-color: #fff;
+	max-width: 50rem;
+}
+
+main {
+	border: toRem(1px) solid black;
+
+	section {
+		border: toRem(1px) solid black;
+	}
+}
+
+footer {
+	border: toRem(1px) solid black;
+}
