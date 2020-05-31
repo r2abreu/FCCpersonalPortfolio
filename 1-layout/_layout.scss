@@ -13,7 +13,7 @@
 	z-index: 1;
 	top: 0;
 	left: 0;
-	height: 10vh;
+	height: auto;
 	/* nav menu */
 	.l-nav-menu {
 		display: flex;
@@ -21,6 +21,9 @@
 		justify-content: center;
 		padding: 0;
 		margin: 0;
+		@media screen and(min-width: toRem(500px)) {
+			justify-content: end;
+		}
 		/* nav items */
 		.l-nav-link {
 			padding: toRem(20px);
@@ -53,25 +56,47 @@
 	}
 	/* grid of articles of the 2nd section */
 	.l-article-grid {
+		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
 		padding: toRem(55px) toRem(5px);
+	}
+	@media screen and (min-width: toRem(720px)) {
+		.l-article-grid {
+			flex-flow: row wrap;
+			justify-content: space-around;
+			max-width: toRem(1800px);
+		}
+	}
 
-		.l-anchor-grid {
-			display: flex;
-			flex-direction: column;
-			margin-bottom: toRem(30px);
+	.l-card {
+		margin-bottom: toRem(20px);
+	}
 
-			.l-card-img {
-				/* super important property for responsive imgs to fit its container */
-				max-width: 100%;
-			}
+	@media screen and (min-width: toRem(720px)) {
+		.l-card {
+			flex: 1 1 50%;
+			max-width: toRem(390px);
+			margin: toRem(20px) toRem(5px);
+		}
+	}
 
-			.l-card-caption {
-				max-width: 100%;
-				text-align: center;
-				padding: toRem(20px);
-				margin: 0;
-			}
+	.l-anchor-grid {
+		display: flex;
+		flex-direction: column;
+
+		.l-card-img {
+			/* super important property for responsive imgs to fit its container */
+			max-width: 100%;
+			min-height: toRem(321px);
+			max-height: toRem(321px);
+		}
+
+		.l-card-caption {
+			max-width: 100%;
+			text-align: center;
+			padding: toRem(20px);
+			margin: 0;
 		}
 	}
 }
